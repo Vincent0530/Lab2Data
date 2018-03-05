@@ -1,6 +1,9 @@
 package indexList;
 
 public interface IndexList<T> { 
+	
+	/* return the integer value corresponding to the capacity of the current instance (the length of the internal array).*/
+	int capacity();
 	/** Determines the size of the current list instance. 
 	 * @return number of elements in the list
 	 **/ 
@@ -53,6 +56,7 @@ public interface IndexList<T> {
 	 * @param e reference to the new element
 	 **/ 
 	void add(T e); 
+	
 	
 	// See the specification for the next two methods in the 
     // documentation for ArrayList in the official Java web page.
